@@ -1,0 +1,163 @@
+@import "reset.scss";
+
+$primary: #6f5356;
+$secondary: #9f6449;
+$tertiary: #ad9071;
+$background: #f4eae6;
+$fontPrimary: "Raleway", "sans-serif";
+$fontTitle: "Yeseva One", "sans-serif";
+
+%btn {
+    padding: 10px 20px;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    line-height: 15.6px;
+    background-color: $secondary;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary;
+    }
+}
+
+%paragraphe {
+    font-size: 17px;
+    font-family: $fontPrimary;
+    color: $secondary;
+    line-height: 25.5px;
+    font-weight: 400;
+}
+
+%h1 {
+    font-size: 65px;
+    font-family: $fontTitle;
+    font-weight: 400;
+    color: $secondary;
+    line-height: 71.5px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: $fontPrimary;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 0.875rem;
+    padding-top: 0.625rem;
+    text-transform: uppercase;
+
+    img {
+        margin-right: 286px;
+        margin-bottom: 15px;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        a {
+            padding: 13px 15px;
+            text-decoration: none;
+            color: $primary;
+
+            &:hover {
+                color: $secondary;
+            }
+            i {
+                margin-left: 0.5rem;
+            }
+        }
+    }
+    .nav-drop {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        background-color: white;
+        top: 10%;
+
+        a {
+            display: block;
+            padding: 10px 15px;
+            &:hover {
+                color: $tertiary;
+            }
+        }
+    }
+    button {
+        @extend %btn;
+        margin-left: 20px;
+    }
+    #hamburger,
+    #xmark {
+        display: none;
+        color: $secondary;
+        width: 30px;
+        cursor: pointer;
+        border: 1px solid;
+        padding: 2px;
+        text-align: center;
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+.show {
+    display: block !important;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 800px;
+    background: $background;
+
+    .img-pen {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 448px;
+    }
+
+    .BG {
+        min-width: 474px;
+        background-image: url("../home-BG-hero-zoespirit.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+
+        .img-hero {
+            position: relative;
+            left: 50%;
+            top: 15%;
+            border-top-left-radius: 9999px;
+            border-top-right-radius: 9999px;
+            max-width: 370px;
+        }
+    }
+    .content {
+        padding: 206px 102px 0 257px;
+        h1 {
+            @extend %h1;
+            margin-bottom: 20px;
+        }
+        h2 {
+            @extend %paragraphe;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        p {
+            @extend %paragraphe;
+            margin-bottom: 34px;
+        }
+        button {
+            @extend %btn;
+        }
+    }
+}
