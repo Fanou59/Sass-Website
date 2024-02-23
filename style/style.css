@@ -1,1 +1,370 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:"";content:none}table{border-collapse:collapse;border-spacing:0}header .content button,.nav button{padding:10px 20px;font-size:.75rem;letter-spacing:2px;line-height:15.6px;background-color:#9f6449;color:#fff;border:none;cursor:pointer}header .content button:hover,.nav button:hover{background-color:#6f5356}header .content p,header .content h2{font-size:17px;font-family:"Raleway","sans-serif";color:#9f6449;line-height:25.5px;font-weight:300}header .content h1{font-size:65px;font-family:"Yeseva One","sans-serif";font-weight:400;color:#9f6449;line-height:71.5px}.nav{display:flex;flex-direction:row;justify-content:center;align-items:center;font-family:"Raleway","sans-serif";line-height:20px;letter-spacing:1px;font-size:.875rem;padding-top:.625rem;text-transform:uppercase}.nav img{margin-right:286px;margin-bottom:15px}.nav .nav-links{display:flex;flex-direction:row;align-items:center}.nav .nav-links a{padding:13px 15px;text-decoration:none;color:#6f5356}.nav .nav-links a:hover{color:#9f6449}.nav .nav-links a i{margin-left:.5rem}.nav .nav-drop{display:none;position:absolute;z-index:10;background-color:#fff;top:10%}.nav .nav-drop a{display:block;padding:10px 15px}.nav .nav-drop a:hover{color:#ad9071}.nav button{margin-left:20px}.nav #hamburger,.nav #xmark{display:none;color:#9f6449;width:30px;cursor:pointer;border:1px solid;padding:2px;text-align:center}.nav #hamburger:hover,.nav #xmark:hover{color:#6f5356}.show{display:block !important}header{display:flex;flex-direction:row;position:relative;height:800px;background:#f4eae6}header .img-pen{position:absolute;bottom:0;right:0;max-width:448px}header .BG{min-width:474px;background-image:url("../home-BG-hero-zoespirit.jpg");background-size:cover;background-repeat:no-repeat;text-align:center}header .BG .img-hero{position:relative;left:50%;top:15%;border-top-left-radius:9999px;border-top-right-radius:9999px;max-width:370px}header .content{padding:206px 102px 0 257px}header .content h1{margin-bottom:20px}header .content h2{font-size:18px;text-transform:uppercase;letter-spacing:1px;font-weight:300;margin-bottom:20px}header .content p{margin-bottom:34px}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.services .card-section .card button, .spirit button, header .content button, .nav button {
+  padding: 10px 20px;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  line-height: 15.6px;
+  background-color: #9f6449;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.services .card-section .card button:hover, .spirit button:hover, header .content button:hover, .nav button:hover {
+  background-color: #6f6356;
+}
+
+.services .card-section .card p, .services h3, .spirit .spirit-content p, .spirit .spirit-content h3, header .content p, header .content h2 {
+  font-size: 17px;
+  font-family: "Raleway", "sans-serif";
+  color: #9f6449;
+  line-height: 25.5px;
+  font-weight: 300;
+  margin-bottom: 14px;
+}
+
+.services h2, .spirit .spirit-content h2, header .content h1 {
+  font-size: 65px;
+  font-family: "Yeseva One", "sans-serif";
+  font-weight: 400;
+  color: #9f6449;
+  line-height: 71.5px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", "sans-serif";
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-size: 0.875rem;
+  padding-top: 0.625rem;
+  text-transform: uppercase;
+}
+.nav img {
+  margin-right: 286px;
+  margin-bottom: 15px;
+}
+.nav .nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav .nav-links a {
+  padding: 13px 15px;
+  text-decoration: none;
+  color: #6f6356;
+}
+.nav .nav-links a:hover {
+  color: #9f6449;
+}
+.nav .nav-links a i {
+  margin-left: 0.5rem;
+}
+.nav .nav-drop {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  top: 10%;
+}
+.nav .nav-drop a {
+  display: block;
+  padding: 10px 15px;
+}
+.nav .nav-drop a:hover {
+  color: #ad9071;
+}
+.nav button {
+  margin-left: 20px;
+}
+.nav #hamburger,
+.nav #xmark {
+  display: none;
+  color: #9f6449;
+  width: 30px;
+  cursor: pointer;
+  border: 1px solid;
+  padding: 2px;
+  text-align: center;
+}
+.nav #hamburger:hover,
+.nav #xmark:hover {
+  color: #6f6356;
+}
+
+.show {
+  display: block !important;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 800px;
+  background: #f4eae6;
+}
+header .img-pen {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 448px;
+}
+header .BG {
+  min-width: 474px;
+  background-image: url("../home-BG-hero-zoespirit.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+header .BG .img-hero {
+  position: relative;
+  left: 50%;
+  top: 15%;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  max-width: 370px;
+}
+header .content {
+  padding: 206px 102px 0 257px;
+}
+header .content h1 {
+  margin-bottom: 20px;
+}
+header .content h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+header .content p {
+  margin-bottom: 34px;
+}
+.spirit {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  overflow: hidden;
+}
+.spirit .img-left {
+  max-width: 296px;
+  margin-right: 50px;
+}
+.spirit .spirit-content {
+  margin-right: 92px;
+}
+.spirit .spirit-content h2 {
+  margin-bottom: 30px;
+}
+.spirit .spirit-content h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.spirit .spirit-content p {
+  color: #6f6356;
+}
+.spirit .spirit-bg {
+  min-width: 415px;
+  height: 100vh;
+  background-image: url("../home-BG-zoespirit-2.jpg");
+  background-size: cover;
+}
+.spirit button {
+  margin-top: 34px;
+}
+
+.services {
+  background-color: #f4eae6;
+  text-align: center;
+  padding: 10px;
+}
+.services .fake-trait {
+  position: relative;
+  height: 100px;
+  margin-bottom: 30px;
+}
+.services .fake-trait .trait {
+  position: absolute;
+  left: 50%;
+  top: -80%;
+  width: 0.5px;
+  height: 140px;
+  color: black;
+  border: 0.5px solid;
+}
+.services h2 {
+  font-size: 55px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+.services h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 34px;
+}
+.services .card-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 135px;
+}
+.services .card-section .card {
+  border-bottom: #9f6449 1px solid;
+}
+.services .card-section .card img {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  margin-bottom: 50px;
+}
+.services .card-section .card h2 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+.services .card-section .card p {
+  margin-bottom: 25px;
+}
+.services .card-section .card button {
+  margin-bottom: 51px;
+}/*# sourceMappingURL=style.css.map */
