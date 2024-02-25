@@ -1,0 +1,23 @@
+@use "../utils/variables";
+
+.card-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 135px;
+
+    .card {
+        border-bottom: variables.$secondary 1px solid;
+
+        img {
+            border-top-left-radius: 9999px;
+            border-top-right-radius: 9999px;
+            margin-bottom: 50px;
+        }
+        p {
+            margin-bottom: 25px;
+        }
+        button {
+            margin-bottom: 51px;
+        }
+    }
+}

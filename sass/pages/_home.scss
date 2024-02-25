@@ -1,0 +1,178 @@
+@use "../base/typo";
+@use "../utils/variables";
+
+.spirit {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    overflow: hidden;
+
+    .img-left {
+        max-width: 296px;
+        margin-right: 50px;
+    }
+    .spirit-content {
+        margin-right: 92px;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+        h3 {
+            margin-bottom: 30px;
+        }
+        p {
+            color: variables.$primary;
+        }
+    }
+    .spirit-bg {
+        min-width: 415px;
+        height: 100vh;
+        background-image: url("assets/home-BG-zoespirit-2.jpg");
+        background-size: cover;
+    }
+    button {
+        margin-top: 34px;
+    }
+}
+
+.services {
+    background-color: variables.$background;
+    text-align: center;
+    padding: 10px;
+
+    .fake-trait {
+        position: relative;
+        height: 100px;
+        margin-bottom: 30px;
+
+        .trait {
+            position: absolute;
+            left: 50%;
+            top: -80%;
+
+            width: 0.5px;
+            height: 140px;
+            color: black;
+            border: 0.5px solid;
+        }
+    }
+
+    h3 {
+        margin-bottom: 34px;
+    }
+}
+
+.cadeau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: variables.$primary;
+
+    .cadeau-image {
+        margin-right: 58px;
+    }
+
+    .cadeau-content {
+        .section-title {
+            color: white;
+        }
+
+        h3 {
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: 2px;
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            margin-bottom: 13px;
+
+            input {
+                flex-basis: 50%;
+                padding: 10px;
+                margin-right: 10px;
+                font-size: 17px;
+                line-height: 25.5px;
+
+                &::placeholder {
+                    color: variables.$primary;
+                    opacity: 0.5;
+                }
+            }
+            button {
+                flex-basis: 50%;
+                font-size: 12px;
+                line-height: 15.6px;
+                letter-spacing: 2px;
+                font-family: typo.$raleway-font;
+                color: white;
+                background-color: #ccad9e;
+                border: none;
+
+                &:hover {
+                    background-color: #ad9071;
+                }
+            }
+        }
+        p {
+            color: white;
+        }
+    }
+}
+
+.meet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 330px;
+
+    .meet-content {
+        display: flex;
+        align-items: center;
+    }
+    .meet-img {
+        margin-right: 40px;
+        position: relative;
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-60%, -50%);
+        }
+    }
+    .meet-text {
+        padding-top: 21px;
+        padding-bottom: 21px;
+
+        p {
+            margin-bottom: 34px;
+        }
+    }
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .section-title {
+        margin-bottom: 20px;
+    }
+    h3 {
+        margin-bottom: 34px;
+        color: variables.$primary;
+    }
+    .blog-fullCard {
+        display: flex;
+        gap: 25px;
+    }
+}

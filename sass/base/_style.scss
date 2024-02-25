@@ -1,0 +1,48 @@
+@use "typo";
+@use "../utils/variables";
+
+h1 {
+    font-size: 65px;
+    font-family: typo.$yeseva-font;
+    font-weight: 400;
+    color: variables.$secondary;
+    line-height: 71.5px;
+}
+
+.section-title {
+    @extend h1;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+h2 {
+    font-family: typo.$raleway-font;
+    font-size: 18px;
+    line-height: 25.2px;
+    margin-bottom: 20px;
+    color: variables.$secondary;
+    letter-spacing: 1px;
+}
+
+h3 {
+    @extend h2;
+    text-transform: uppercase;
+}
+
+.card-title {
+    font-family: typo.$yeseva-font;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 15px;
+    color: variables.$secondary;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 17px;
+    font-family: typo.$raleway-font;
+    color: variables.$secondary;
+    line-height: 25.5px;
+    font-weight: 300;
+    margin-bottom: 14px;
+}

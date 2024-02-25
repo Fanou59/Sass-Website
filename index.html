@@ -3,21 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="main.css" />
     <title>Zoe Spirit</title>
   </head>
   <body>
@@ -73,30 +59,29 @@
       <i id="hamburger" class="fa-solid fa-bars"></i>
       <i id="xmark" class="fa-solid fa-xmark"></i>
     </nav>
-    <header class="">
-      <img class="img-pen" src="crayon.png" alt="" />
+
+    <header>
+      <img class="img-pen" src="./assets/crayon.png" alt="" />
       <div class="BG">
-        <img class="img-hero" src="home-hero-zoespirit.jpg" alt="" />
+        <img class="img-hero" src="./assets/home-hero-zoespirit.jpg" alt="" />
       </div>
       <div class="content">
-        <h1 class="">Ton super titre magique ici</h1>
-        <h2 class="">Ton sous-titre captivant ici</h2>
+        <h1>Ton super titre magique ici</h1>
+        <h3>Ton sous-titre captivant ici</h3>
         <p class="">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo magni
           consequuntur quidem reiciendis animi! Sequi deleniti omnis iusto. Ea
           dolorem placeat.
         </p>
-        <button class="">ON Y VA ?</button>
+        <button>ON Y VA ?</button>
       </div>
     </header>
 
     <section class="spirit">
-      <!--<div class="trait"></div>-->
-
-      <img class="img-left" src="about-zoespirit.jpg" alt="" />
+      <img class="img-left" src="./assets/about-zoespirit.jpg" alt="" />
 
       <div class="spirit-content">
-        <h2>Zoé Spirit</h2>
+        <h2 class="section-title">Zoé Spirit</h2>
         <h3>Ton accompagnatrice privilégiée</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
@@ -117,29 +102,160 @@
       <div class="fake-trait">
         <div class="trait"></div>
       </div>
-      <h2>Mes services</h2>
+      <h2 class="section-title">Mes services</h2>
       <h3>3 façons de travailler avec moi</h3>
 
       <div class="card-section">
         <div class="card">
-          <img src="service-1.jpg" alt="" />
-          <h2>Le Coaching 1:1</h2>
+          <img src="assets/service-1.jpg" alt="" />
+          <h2 class="card-title">Le Coaching 1:1</h2>
           <p>Prête à changer ?</p>
           <button>découvrir</button>
         </div>
 
         <div class="card">
-          <img src="service-2.jpg" alt="" />
-          <h2>Le Programme</h2>
+          <img src="assets/service-2.jpg" alt="" />
+          <h2 class="card-title">Le Programme</h2>
           <p>Amène de la magie dans ta vie</p>
           <button>découvrir</button>
         </div>
 
         <div class="card">
-          <img src="service-3.jpg" alt="" />
-          <h2>La boutique</h2>
+          <img src="assets/service-3.jpg" alt="" />
+          <h2 class="card-title">La boutique</h2>
           <p>Des outils pour t'aider à briller</p>
           <button>découvrir</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cadeau">
+      <div class="cadeau-image">
+        <img src="assets/workbook-zoesweet.png" alt="" width="244px" />
+      </div>
+      <div class="cadeau-content">
+        <h2 class="section-title">J'ai un cadeau pour toi !</h2>
+        <h3>Lorem ipsum, dolor sit amet consectetur</h3>
+        <form action="">
+          <input type="text" placeholder="Prénom" />
+          <input type="email" placeholder="Email" />
+          <button type="submit">RECEVOIR</button>
+        </form>
+        <p>En t'inscrivant tu es ok avec la politique de confidentialité</p>
+      </div>
+    </section>
+
+    <section class="meet">
+      <div class="meet-content">
+        <div class="meet-img">
+          <img
+            src="assets/about-bloc-zoespirit.jpg"
+            height="358px"
+            width="292px"
+          />
+          <img class="logo" src="assets/logo-zoe-spirit-circle-1.svg" alt="" />
+        </div>
+        <div class="meet-text">
+          <h2 class="section-title">On se rencontre ?</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+            animi dolorum autem, dolore voluptas quis commodi exercitationem cum
+            molestiae tenetur voluptatum assumenda quam harum facere repellendus
+            nulla sunt magnam recusandae. Delectus sunt reprehenderit placeat
+            modi quidem aut, harum vero quos
+          </p>
+          <button>Me contacter</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <div class="testimonial-title">Elles ont adoré !</div>
+      <div class="testimonial-content">
+        <div class="testimonial-text">
+          <div class="testimonial-q">
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+              debitis qui voluptas ex nemo alias iure, quis perferendis at
+              impedit iste, minus inventore porro ducimus doloremque odit
+              nesciunt consequuntur unde. Impedit ullam explicabo unde libero
+              minima praesentium iure aperiam numquam.
+            </blockquote>
+          </div>
+          <div class="testimonial-user">Alice summer, sunny coaching</div>
+        </div>
+        <div class="testimonial-text">
+          <div class="testimonial-q">
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+              debitis qui voluptas ex nemo alias iure, quis perferendis at
+              impedit iste, minus inventore porro ducimus doloremque odit
+              nesciunt consequuntur unde. Impedit ullam explicabo unde libero
+              minima praesentium iure aperiam numquam.
+            </blockquote>
+          </div>
+          <div class="testimonial-user">
+            Océane Rosenberg, sunflower program
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="section-title">Sur le blog</div>
+      <h3>Mes astuces holistiques</h3>
+      <div class="blog-fullCard">
+        <div class="blog-card">
+          <img src="assets/home-BG-zoespirit-2.jpg" alt="" />
+          <div class="blog-content">
+            <div class="blog-title">
+              Un article pour développer ta thématique
+            </div>
+            <p>
+              Qui obcaecati rerum sit voluptatum laboriosam. Lorem ipsum dolor
+              sit amet. Quo repudiandae voluptatem eum incidunt adipisciut sint!
+              In totam dolorem In recusandae sit minus
+            </p>
+            <a href="http://">Read More <span>&raquo;</span></a>
+          </div>
+          <div class="blog-footer">
+            <span class="date">30 septembre 2022</span>
+            <span class="commentaire">Aucun commentaire</span>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="assets/home-BG-hero-zoespirit.jpg" alt="" />
+          <div class="blog-content">
+            <div class="blog-title">Un podcast qui déchire</div>
+            <p>
+              Qui obcaecati rerum sit voluptatum laboriosam. Lorem ipsum dolor
+              sit amet. Quo repudiandae voluptatem eum incidunt adipisciut sint!
+              In totam dolorem In recusandae sit minus
+            </p>
+            <a href="http://">Read More <span>&raquo;</span></a>
+          </div>
+          <div class="blog-footer">
+            <span class="date">30 septembre 2022</span>
+            <span class="commentaire">Aucun commentaire</span>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="assets/spirit-girl-300x240.jpg" alt="" />
+          <div class="blog-content">
+            <div class="blog-title">
+              Un nouvel article de blog pour ton super site internet
+            </div>
+            <p>
+              Qui obcaecati rerum sit voluptatum laboriosam. Lorem ipsum dolor
+              sit amet. Quo repudiandae voluptatem eum incidunt adipisciut sint!
+              In totam dolorem In recusandae sit minus
+            </p>
+            <a href="http://">Read More <span>&raquo;</span></a>
+          </div>
+          <div class="blog-footer">
+            <span class="date">30 septembre 2022</span>
+            <span class="commentaire">Aucun commentaire</span>
+          </div>
         </div>
       </div>
     </section>

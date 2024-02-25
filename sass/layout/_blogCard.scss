@@ -1,0 +1,60 @@
+@use "../base/typo";
+@use "../utils/variables";
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    width: 353px;
+    border-radius: 3px;
+
+    img {
+        height: 233px;
+        object-fit: cover;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+    .blog-content {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(222, 222, 222);
+        height: 100%;
+
+        .blog-title {
+            font-family: typo.$yeseva-font;
+            font-size: 21px;
+            line-height: 25.2px;
+            color: variables.$primary;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: variables.$primary;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 32px;
+        }
+
+        a {
+            font-family: typo.$raleway-font;
+            font-size: 12px;
+            line-height: 15.6px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: variables.$secondary;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+
+    .blog-footer {
+        padding-top: 12px;
+
+        span {
+            font-family: typo.$raleway-font;
+            font-size: 12px;
+            line-height: 15.6px;
+            color: variables.$primary;
+            margin-right: 20px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@use "../utils/variables";
+
+button {
+    padding: 10px 20px;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    line-height: 15.6px;
+    background-color: variables.$secondary;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: variables.$primary;
+    }
+}

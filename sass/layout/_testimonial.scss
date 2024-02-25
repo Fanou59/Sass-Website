@@ -1,0 +1,45 @@
+@use "../utils/variables";
+@use "../base/typo";
+
+.testimonial {
+    padding: 80px 143px;
+    background-color: variables.$background;
+
+    .testimonial-title {
+        font-family: typo.$yeseva-font;
+        font-size: 35px;
+        line-height: 35px;
+        color: variables.$primary;
+        margin-bottom: 40px;
+    }
+
+    .testimonial-content {
+        display: flex;
+    }
+    .testimonial-text {
+        padding-top: 10px;
+
+        .testimonial-q {
+            border-left: 1px solid black;
+            margin-bottom: 30px;
+
+            blockquote {
+                font-family: typo.$raleway-font;
+                color: variables.$primary;
+                font-size: 17px;
+                line-height: 25.5px;
+                padding-left: 36px;
+                padding-bottom: 20px;
+            }
+        }
+        .testimonial-user {
+            font-family: typo.$raleway-font;
+            font-size: 12px;
+            line-height: 15.6px;
+            letter-spacing: 2px;
+            color: variables.$primary;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}

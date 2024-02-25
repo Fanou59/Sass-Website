@@ -1,0 +1,59 @@
+@use "../base/typo";
+@use "../utils/variables";
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: typo.$raleway-font;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 0.875rem;
+    padding-top: 0.625rem;
+    text-transform: uppercase;
+
+    img {
+        margin-right: 286px;
+        margin-bottom: 15px;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        a {
+            padding: 13px 15px;
+            text-decoration: none;
+            color: variables.$primary;
+
+            &:hover {
+                color: variables.$secondary;
+            }
+            i {
+                margin-left: 0.5rem;
+            }
+        }
+    }
+    .nav-drop {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        background-color: white;
+        top: 10%;
+
+        a {
+            display: block;
+            padding: 10px 15px;
+            &:hover {
+                color: variables.$tertiary;
+            }
+        }
+    }
+    button {
+        margin-left: 20px;
+    }
+}
+
+.show {
+    display: block !important;
+}

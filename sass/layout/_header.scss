@@ -1,0 +1,43 @@
+@use "../utils/variables";
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background: variables.$background;
+
+    .img-pen {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 448px;
+    }
+
+    .BG {
+        min-width: 474px;
+        background-image: url("assets/home-BG-hero-zoespirit.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+
+        .img-hero {
+            position: relative;
+            left: 50%;
+            top: 15%;
+            border-top-left-radius: 9999px;
+            border-top-right-radius: 9999px;
+            max-width: 370px;
+        }
+    }
+    .content {
+        padding: 206px 102px 236px 257px;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 34px;
+        }
+    }
+}
