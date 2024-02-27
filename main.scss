@@ -1,11 +1,5 @@
-@use "sass/base/reset";
-@use "sass/base/typo";
-@use "sass/base/style";
+@use "sass/base/base";
 @use "sass/utils/variables";
 @use "sass/components/button";
-@use "sass/layout/nav";
-@use "sass/layout/card";
-@use "sass/layout/header";
-@use "sass/layout/testimonial";
+@use "sass/layout/layout";
 @use "sass/pages/home";
-@use "sass/layout/blogCard";
